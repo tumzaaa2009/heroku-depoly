@@ -293,7 +293,7 @@ const introInfo = {
     },
     {
       name : ": Navapon Yoidee",
-      Dev :"vue-cli2 , NodeExpress 4.17 , fontawesome 4.7 , Bootstrap 5"
+      Dev :"vue-cli2 , NodeExpress 4.17 , fontawesome 4.7 , Bootstrap 5 , Github , Heroku"
     }
     
   ];

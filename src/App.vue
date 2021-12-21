@@ -1,7 +1,7 @@
 <template>
   <div class="main-page text-center position-relative" ref="content">
     <div class="main-page-inner mx-auto text-start bg-white shadow-lg">
-      <!-- <button class="btn" @click="exportPdf()" v-if="downloadButtonVisible">Export PDF</button> -->
+      <button class="btn" @click="exportPdf()" v-if="downloadButtonVisible">Export PDF</button>
       <Intro
         :introInfo="data.introInfo"
         :contactInfo="data.contactInfo"
@@ -26,8 +26,8 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
-            <Language :languageInfo="data.languageInfo" />
+          <div class="col-auto">
+            <DevCredit :designDev="data.designDev" />
           </div>
           <!-- <div class="col-lg-8">
                     <Volunteer :volunteerInfo="data.volunteerInfo" />
@@ -39,15 +39,15 @@
 </template>
 
 <script>
-// import jsPDF from 'jspdf'
-// import domtoimage from "dom-to-image";
+import jsPDF from 'jspdf'
+import domtoimage from "dom-to-image";
 import Intro from "@/components/Intro.vue";
 import Summary from "@/components/Summary.vue";
 // import Profile from '@/components/Profile.vue'
 // import SocialMedia from '@/components/SocialMedia.vue'
 import Education from "@/components/Education.vue";
 import Experience from "@/components/Experience.vue";
-import Language from "@/components/Language.vue";
+import DevCredit from "@/components/DevCredit.vue";
 import Interest from "@/components/Interest.vue";
 import Certificate from "@/components/Certificate.vue";
 // import Volunteer from '@/components/Volunteer.vue'
@@ -63,7 +63,7 @@ export default {
     // SocialMedia,
     Education,
     Experience,
-    Language,
+    DevCredit,
     Interest,
     Certificate,
     Skill,
@@ -76,29 +76,29 @@ export default {
     };
   },
   methods: {
-    // exportPdf() {
-    //     this.downloadButtonVisible = false
-    //     /** WITH CSS */
-    //     domtoimage
-    //         .toPng(this.$refs.content)
-    //         .then(function (dataUrl) {
-    //             var img = new Image();
-    //             img.src = dataUrl;
-    //             const doc = new jsPDF({
-    //                 orientation: "portrait",
-    //                 // unit: "pt",
-    //                 format: [750, 500]
-    //             });
-    //             doc.addImage(img, "JPEG", 20, 20);
-    //             const date = new Date();
-    //             const filename =
-    //                 "CVue_Awesome".pdf;
-    //             doc.save(filename);
-    //         })
-    //         .catch(function (error) {
-    //             console.error("oops, something went wrong!", error);
-    //         });
-    // }
+    exportPdf() {
+        this.downloadButtonVisible = false
+        /** WITH CSS */
+        domtoimage
+            .toPng(this.$refs.content)
+            .then(function (dataUrl) {
+                var img = new Image();
+                img.src = dataUrl;
+                const doc = new jsPDF({
+                    orientation: "portrait",
+                    // unit: "pt",
+                    format: [750, 500]
+                });
+                doc.addImage(img, "JPEG", 20, 20);
+                // const date = new Date();
+                const filename =
+                    "CVue_Awesome".pdf;
+                doc.save(filename);
+            })
+            .catch(function (error) {
+                console.error("oops, something went wrong!", error);
+            });
+    }
   },
 };
 </script>

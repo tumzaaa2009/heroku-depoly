@@ -71,7 +71,7 @@ const introInfo = {
   ];
   
   const summaryInfo =
-    "นายนวพล ย้อยดี ตำแหน่ง:นักวิชการคอมพิวเตอร์ปฏิบัติการ อายุ: 28 ปี ความสามารถพิเศษทางด้านกีฬา : แบดมินตัน , ปั่นจักรยาน  ภาษาที่ใช้ในการเขียนโปรแกรม : HTML5, PHP 5-7 , Jquery , Javascript , NodeJsExpress ,vue-cli ,Mysql, Mysqlserver , CSS , GitHub , Heroku , Google-Api , Linux-Command ด้านเทคนิค It-Support,IT-HardWare,Zoom CloudMeeting , Webex";
+    "นายนวพล ย้อยดี ตำแหน่ง:นักวิชการคอมพิวเตอร์ปฏิบัติการ อายุ: 28 ปี ความสามารถพิเศษทางด้านกีฬา : แบดมินตัน , ปั่นจักรยาน  ภาษาที่ใช้ในการเขียนโปรแกรม : HTML5, PHP 5-7 , Jquery , Javascript , NodeJsExpress ,vue-cli , Mysql , Mysqlserver , CSS , GitHub , Heroku , Google-Api , Linux-Command ด้านเทคนิค It-Support , IT-HardWare , Zoom CloudMeeting , Webex";
   
   //desc v-html
   const experinceInfo = [
@@ -286,22 +286,16 @@ const introInfo = {
   ];
   
   // 0,1,2,3,4,5
-  const languageInfo = [
+  const designDev = [
     {
-      name: "Turkish",
-      rate: 5,
-      level: "Native",
+      name: ": https://github.com/coskuncayemre",
+      Dev :""
     },
     {
-      name: "English",
-      rate: 4,
-      level: "Int",
-    },
-    {
-      name: "German",
-      rate: 1,
-      level: "Ele",
-    },
+      name : ": Navapon Yoidee",
+      Dev :"vue-cli2 , NodeExpress 4.17 , fontawesome 4.7 , Bootstrap 5"
+    }
+    
   ];
   
   const interestInfo = [
@@ -332,7 +326,7 @@ const introInfo = {
     skillInfo: skillInfo,
     certificateInfo: certificateInfo,
     volunteerInfo: volunteerInfo,
-    languageInfo: languageInfo,
+    designDev: designDev,
     contactInfo: contactInfo,
     interestInfo: interestInfo,
     summaryInfo: summaryInfo,

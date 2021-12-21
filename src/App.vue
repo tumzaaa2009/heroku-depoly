@@ -42,7 +42,7 @@ import Experience from '@/components/Experience.vue'
 import Language from '@/components/Language.vue'
 import Interest from '@/components/Interest.vue'
 import Certificate from '@/components/Certificate.vue'
-import Volunteer from '@/components/Volunteer.vue'
+// import Volunteer from '@/components/Volunteer.vue'
 import Skill from '@/components/Skill.vue'
 
 import data from './data'
@@ -59,7 +59,7 @@ export default {
         Interest,
         Certificate,
         Skill,
-        Volunteer
+        // Volunteer
     },
     data() {
         return {

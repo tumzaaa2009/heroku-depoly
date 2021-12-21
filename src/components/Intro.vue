@@ -1,6 +1,6 @@
 <template>
   <section class="row pt-5">
-    <div class="col-md-4 " v-bind:style="introInfo.imgStyle.align">
+    <div class="col-md-4 " v-bind:style="introInfo.imgStyle.align"> ทดสอบการยิง
       <!-- <div class="profile-pic">  -->
       <!-- <img :src="getProfileImage()" alt="">  -->
       <!-- </div>  -->

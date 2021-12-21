@@ -85,14 +85,15 @@ export default {
                 var img = new Image();
                 img.src = dataUrl;
                 const doc = new jsPDF({
-                    orientation: "portrait",
-                    // unit: "pt",
-                    format: [750, 500]
+                     orientation: 'P', // landscape
+                      unit: "mm",
+                      //height , width
+                    format: [750, 350]
                 });
                 doc.addImage(img, "JPEG", 20, 20);
                 // const date = new Date();
                 const filename =
-                    "CVue_Awesome".pdf;
+                    "Myport".pdf;
                 doc.save(filename);
             })
             .catch(function (error) {
